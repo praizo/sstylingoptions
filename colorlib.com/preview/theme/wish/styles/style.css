@@ -1,0 +1,203 @@
+    /* *{
+        font-family: 'Montserrat', sans-serif !important;
+
+    } */
+        #hack, #hack2{
+            display: none; 
+        }
+
+        @media screen and (min-width: 752px) and (max-width: 978px) { 
+            #hack { 
+                display: inline-block;
+                width: 370px !important;
+                padding: 0 20px !important;
+            }
+        }
+        @media screen and (min-width: 752px) and (max-width: 978px) { 
+            #hack2 { 
+                display: inline-block;
+            }
+        }
+        @media screen and (max-width: 1200px) { 
+            #hack { 
+                display: inline-block;
+            }
+        }
+        
+        
+
+#overlay{
+        
+        background-size: cover; 
+        background-position: center;
+        height: 300px; 
+    }
+
+
+    #testimonial-overlay {
+        background-image:linear-gradient(to left, rgba(31, 23, 23, 0.01), rgba(14, 12, 12, 0.384), rgb(26, 24, 24)), url(../images/person-cutting-white-cloth-2973399.jpg); 
+        /* background-size: cover;  */
+        background-position: center;
+        background-attachment: fixed;
+        /* min-height: 400px;  */
+    }
+
+    .transition {    
+        -webkit-transition: all 0.51s ease-in-out;
+        -moz-transition: all 0.51s ease-in-out;
+        -o-transition: all 0.51s ease-in-out;
+        transition: all 0.51s ease-in-out;
+    }
+    /* .bgfade {
+        background-color: #000 !important;
+        opacity: 0.5 !important;
+    } */
+    
+    #overlay1{
+        background-image:linear-gradient(to left, rgba(31, 23, 23, 0.01), rgba(14, 12, 12, 0.384), rgb(26, 24, 24)), url(../images/home_slider_1.jpg);
+        min-height: 80vh; 
+        background-size: cover;
+    }
+    
+    #overlay-jumbo {
+        margin: 8rem 0rem 0rem 0rem;
+        
+    
+    }
+
+     .login-wrap{
+        width:100%;
+        min-height:650px;
+        position:relative;
+    }
+    
+    .login-html{
+        width:100%;
+        height:100%;
+        position:absolute;
+        padding: 20px;
+    }
+    .login-html .sign-in-htm,
+    .login-html .sign-up-htm{
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        position:absolute;
+        transform:rotateY(180deg);
+        backface-visibility:hidden;
+        transition:all .4s linear;
+    }
+    .login-html .sign-in,
+    .login-html .sign-up,
+    .login-form .group .check{
+        display:none;
+    }
+    .login-html .tab,
+    .login-form .group .label,
+    .login-form .group .button{
+        text-transform:uppercase;
+    }
+    .login-html .tab{
+        font-size:22px;
+        margin-right:15px;
+        padding-bottom:5px;
+        margin:0 15px 10px 0;
+        display:inline-block;
+        border-bottom:2px solid transparent;
+    }
+    .login-html .sign-in:checked + .tab,
+    .login-html .sign-up:checked + .tab{
+        color:#fff;
+        border-color:#90007F;
+        background-color: #90007F;
+        padding: 10px;
+    }
+    .login-form{
+        min-height:345px;
+        position:relative;
+        perspective:1000px;
+        transform-style:preserve-3d;
+    }
+    .login-form .group{
+        margin-bottom:15px;
+    }
+    .login-form .group .label,
+    .login-form .group .input,
+    .login-form .group .button{
+        width:100%;
+        color:#fff;
+        display:block;
+    }
+    .login-form .group .input,
+    .login-form .group .button{
+        border:none;
+        padding:15px 20px;
+        border-radius:25px;
+        background:rgba(255,255,255,.1);
+    }
+    .login-form .group input[data-type="password"]{
+        text-security:circle;
+        -webkit-text-security:circle;
+    }
+    .login-form .group .label{
+        color:#fff;
+        font-size:12px;
+    }
+    
+    .login-form .group label .icon{
+        width:15px;
+        height:15px;
+        border-radius:2px;
+        position:relative;
+        display:inline-block;
+        background:#fff;
+    }
+    .login-form .group label .icon:before,
+    .login-form .group label .icon:after{
+        content:'';
+        width:10px;
+        height:2px;
+        background:#fff;
+        position:absolute;
+        transition:all .2s ease-in-out 0s;
+    }
+    .login-form .group label .icon:before{
+        left:3px;
+        width:5px;
+        bottom:6px;
+        transform:scale(0) rotate(0);
+    }
+    .login-form .group label .icon:after{
+        top:6px;
+        right:0;
+        transform:scale(0) rotate(0);
+    }
+    .login-form .group .check:checked + label{
+        color:#fff;
+    }
+    .login-form .group .check:checked + label .icon{
+        background:#90007F;
+    }
+    .login-form .group .check:checked + label .icon:before{
+        transform:scale(1) rotate(45deg);
+    }
+    .login-form .group .check:checked + label .icon:after{
+        transform:scale(1) rotate(-45deg);
+    }
+    .login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+        transform:rotate(0);
+    }
+    .login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+        transform:rotate(0);
+    }
+    
+    .hr{
+        height:2px;
+        margin:60px 0 50px 0;
+        background:#90007F;
+    }
+    .foot-lnk{
+        text-align:center;
+    }
+
